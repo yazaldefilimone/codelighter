@@ -1,6 +1,6 @@
 [package]
 name = "dunh"
-version = "1.0.1"
+version = "1.0.2"
 edition = "2021"
 description = "Highlights code for printing"
 repository = "https://github.com/yazaldefilimone/dunh"
@@ -9,3 +9,17 @@ keywords = ["console", "terminal", "error"]
 categories = ["compilers", "text-processing"]
 
 [dependencies]
+
+
+[profile.release]
+lto = "fat"       # Link Time Optimization
+opt-level = 3
+codegen-units = 1
+strip = "symbols" # set to `false` for debug information
+debug = false     # set to `true` for debug information
+panic = "abort"   # Let it crash and force ourselves to write safe Rust.
+# Profile for `cargo coverage`
+[profile.coverage]
+inherits = "release"
+lto = "thin"            # Faster compile time with thin lto
+debug-assertions = true # Make sure `debug_assert!`s pass
