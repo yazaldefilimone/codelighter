@@ -1,6 +1,6 @@
 [package]
 name = "dunh"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "Highlights code for printing"
 repository = "https://github.com/yazaldefilimone/dunh"
