@@ -1,9 +1,9 @@
 [package]
-name = "dunh"
+name = "codelighter"
 version = "1.0.2"
 edition = "2021"
-description = "Highlights code for printing"
-repository = "https://github.com/yazaldefilimone/dunh"
+description = "A fast error, warning and notes highlighter for Rust"
+repository = "https://github.com/yazaldefilimone/codelighter"
 license = "MIT"
 keywords = ["console", "terminal", "error"]
 categories = ["compilers", "text-processing"]
